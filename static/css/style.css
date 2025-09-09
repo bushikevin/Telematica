@@ -1,0 +1,192 @@
+/* Custom styles for URL Validator */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: #495057;
+    color: white;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: 6px;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Status badges */
+.status-ok {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.875em;
+    font-weight: 500;
+}
+
+.status-redirect {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.875em;
+    font-weight: 500;
+}
+
+.status-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.875em;
+    font-weight: 500;
+}
+
+.status-private {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.875em;
+    font-weight: 500;
+}
+
+.status-not-found {
+    background-color: #f5c6cb;
+    color: #721c24;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.875em;
+    font-weight: 500;
+}
+
+/* Table styles */
+#resultsTable {
+    font-size: 0.9em;
+}
+
+#resultsTable th {
+    background-color: #343a40;
+    border: none;
+    font-weight: 600;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#resultsTable td {
+    vertical-align: middle;
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#resultsTable tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* URL display in table */
+.url-cell {
+    max-width: 300px;
+    word-break: break-all;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85em;
+}
+
+/* Source column styling */
+.source-cell {
+    font-weight: 500;
+    color: #495057;
+}
+
+/* Loading animation */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .url-cell {
+        max-width: 200px;
+        font-size: 0.8em;
+    }
+
+    #resultsTable td {
+        padding: 8px;
+        font-size: 0.85em;
+    }
+
+    .btn-sm {
+        font-size: 0.8em;
+        padding: 4px 8px;
+    }
+}
+
+/* Animation for showing results */
+#resultsSection {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom scrollbar for table */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
